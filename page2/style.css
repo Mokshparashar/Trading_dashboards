@@ -94,12 +94,14 @@ nav {
 }
 .search-box svg {
   position: absolute;
-  top: 20%;
-  left: 60%;
+  top: 12%;
+  left: 54%;
   color: var(--blueviolet);
   background-color: var(--lightblueviolet);
   padding: 0.4rem;
   border-radius: 8px;
+  width: 2.3rem;
+  height: 2.3rem;
 }
 
 .search-box i {
@@ -115,8 +117,8 @@ nav {
 }
 
 .tool-box svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
 }
 
 .icon-tabler-access-point {
@@ -213,7 +215,7 @@ article::-webkit-scrollbar-thumb {
   align-items: center;
   padding: 1rem 2rem;
 
-  width: 70%;
+  width: 100%;
 }
 
 .article-box ul li:hover {
@@ -221,7 +223,7 @@ article::-webkit-scrollbar-thumb {
   display: flex;
   padding: 1rem 2rem;
 
-  width: 80%;
+  width: 100%;
   background-color: var(--lightblueviolet);
   border-radius: 10px;
   cursor: pointer;
@@ -272,7 +274,7 @@ article::-webkit-scrollbar-thumb {
 
 .container-box {
   background-color: white;
-  width: 93%;
+  width: 96%;
   height: 4rem;
   margin: auto;
   margin-top: 1.5rem;
@@ -344,6 +346,7 @@ input {
 }
 
 .search-box-2 i {
+
   position: absolute;
   left: 2%;
   top: 35%;
@@ -375,19 +378,116 @@ input {
 
 #table-parent-box-1 {
   border-bottom: 1px solid rgb(241, 236, 236);
-  padding: 0;
+  /* padding: 0; */
 }
 
 /* ---------------------table -----------------------*/
 
 table {
-  padding: 24px;
+  
   width: 100%;
+  margin: auto;
 }
 
-tr {
+thead tr th{
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  
+  
+}
+
+tbody tr th{
+  font-weight: 400;
+  font-size: .8rem;
+  text-align: start;
+  width: 1rem;
+  
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+ 
+  
+}
+
+thead tr th:nth-child(1),tbody tr th:nth-child(1){
+  width: 3rem;
+  text-align: center;
+}
+thead tr th:nth-child(2),tbody tr th:nth-child(2){
+  width: 13rem;
+  
+ 
+  
+}
+thead tr th:nth-child(3),tbody tr th:nth-child(3){
+  width: 6rem;
+}
+
+thead tr th:nth-child(4),tbody tr th:nth-child(4){
+  width: 3rem;
+}
+
+thead tr th:nth-child(5),tbody tr th:nth-child(5){
+  width: 3rem;
+}
+
+thead tr th:nth-child(6),tbody tr th:nth-child(6){
+  width: 4rem;
+}
+
+th img{
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.profile-name{
+  font-weight: 500;
+}
+.profile-email{
+  font-weight: 300;
+}
+.profile-data{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: .5rem;
+}
+
+.profile-data-box{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  text-align: left;
+  justify-content:start;
 }
+tbody tr th:nth-child(6) p{
+  font-size: 12px;
+  padding: .4rem;
+  display: inline;
+  background-color: var(--lightblue);
+  border-radius: 20%;
+  color: rgb(34, 173, 15);
+  font-weight: 600;
+}
+
+.container{
+  overflow-y: scroll;
+}
+/* width */
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+  background: rgb(163, 163, 163);
+  border-radius: 10px;
+}
+
