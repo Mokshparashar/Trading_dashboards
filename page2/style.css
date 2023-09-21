@@ -56,7 +56,7 @@ nav {
   position: sticky;
 }
 .logo-box {
-  width: 19vw;
+  width: 18vw;
 }
 
 .logo-box i {
@@ -78,6 +78,11 @@ nav {
   border-radius: 10px;
   padding-left: 2.5rem;
   font-size: 1rem;
+}
+
+input::placeholder {
+  font-size: 13px;
+  font-weight: 600;
 }
 .search-box input:hover {
   height: 3rem;
@@ -114,6 +119,7 @@ nav {
 
 .tool-box {
   width: 12vw;
+  justify-content: end;
 }
 
 .tool-box svg {
@@ -141,7 +147,7 @@ nav {
 }
 
 .profile-box {
-  width: 6vw;
+  width: 7.4vw;
   background-color: var(--lightblue);
   padding: 0.5rem;
   border-radius: 30px;
@@ -202,13 +208,13 @@ article::-webkit-scrollbar-thumb {
 
 .article-box {
   width: 17vw;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid rgb(228, 228, 228);
-  margin-top: 1rem;
+  padding-top: 0.8rem;
 }
 
 .article-box ul {
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 .article-box ul li {
   list-style: none;
@@ -234,7 +240,7 @@ article::-webkit-scrollbar-thumb {
 }
 .article-box h4 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(69, 69, 69);
 }
 
@@ -251,12 +257,12 @@ article::-webkit-scrollbar-thumb {
 .basic-elements {
   display: block;
 }
-.basic-elements::after {
+/* .basic-elements::after {
   content: "8+ basic components";
   width: 100%;
   display: block;
   font-size: 12px;
-}
+} */
 
 /* .prebuild-pages::after {
   content: "Prebuild Pages";
@@ -533,4 +539,54 @@ tbody:nth-child(10) {
   border-radius: 50%;
   color: white;
   background-color: var(--blue);
+  cursor: pointer;
+}
+
+.ul-2 {
+  display: none;
+}
+
+.ul {
+  display: block;
+  animation-name: dropSlow;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+
+  animation-fill-mode: both;
+  /* animation-iteration-count: 1; */
+  background-color: white;
+}
+
+@keyframes dropSlow {
+  0% {
+    height: min-content;
+  }
+
+  100% {
+    height: fit-content;
+  }
+}
+
+.article-box h4:hover {
+  cursor: pointer;
+  color: var(--blueviolet);
+}
+article {
+  background-color: white;
+}
+
+a {
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--blueviolet);
+}
+
+.bx-sm {
+  font-size: 1.55rem;
+}
+
+.bx-message-square {
 }

@@ -93,9 +93,9 @@ nav {
   outline: 2px solid var(--blue);
   border-radius: 10px;
 }
-.search-box input::placeholder{
+.search-box input::placeholder {
   font-size: 13px;
-  opacity: .6;
+  opacity: 0.6;
   font-weight: 600;
 }
 .search-box svg {
@@ -183,9 +183,10 @@ section {
 
 article {
   height: 80vh;
-  width: 18vw;
+  width: 19vw;
   overflow-y: scroll;
-  margin-top: -2rem;
+  margin-top: -4rem;
+  overflow-x: hidden;
 }
 /* width */
 article::-webkit-scrollbar {
@@ -207,9 +208,8 @@ article::-webkit-scrollbar-thumb {
   width: 17vw;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgb(228, 228, 228);
-  margin-top: 1rem;
+  padding-top: 1rem;
   background-color: white;
-  
 }
 
 .article-box ul {
@@ -232,7 +232,7 @@ article::-webkit-scrollbar-thumb {
   list-style: none;
   display: flex;
   padding: 1rem 2rem;
-  
+
   /* width: 80%; */
   background-color: var(--lightblueviolet);
   border-radius: 10px;
@@ -243,7 +243,7 @@ article::-webkit-scrollbar-thumb {
 }
 .article-box h4 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(69, 69, 69);
   background-color: white;
 }
@@ -261,7 +261,6 @@ article::-webkit-scrollbar-thumb {
 .basic-elements {
   display: block;
 }
-
 
 /* container */
 .container {
@@ -323,44 +322,56 @@ article::-webkit-scrollbar-thumb {
   padding-bottom: 0rem;
 }
 
-
-.article-box:nth-child(2){
+.article-box:nth-child(2) {
   height: 1rem;
 }
 hr {
   opacity: 0.3;
 }
 
-.ul-2{
- display: none;
+.ul-2 {
+  display: none;
 }
 
-.ul{
+.ul {
   display: block;
   animation-name: dropSlow;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   /* animation-iteration-count: 1; */
   background-color: white;
-  
-  
 }
 
-@keyframes dropSlow{
-  0%{
-    height: 0rem;
+@keyframes dropSlow {
+  0% {
+    height: min-content;
   }
-  100%{
-    height: 8rem;
+  100% {
+    height: fit-content;
   }
-
 }
 
-.article-box h4{
+.article-box h4 {
   cursor: pointer;
-  
 }
-article{
+article {
   background-color: white;
+}
+
+a {
+  font-size: 13px;
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  color: var(--blueviolet);
+}
+.page2 {
+  margin-left: 10px;
 }
