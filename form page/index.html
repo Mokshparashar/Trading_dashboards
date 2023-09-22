@@ -7,12 +7,14 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./ayuform.css" />
+    <link rel="stylesheet" href="style2.css">
 
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar flex-space-around">
+     <nav class="navbar flex-space-around">
       <div class="logo-box flex-space-between">
         <svg
           width="92"
@@ -134,7 +136,7 @@
       <article style="position: sticky; top: 0">
         <div class="article-box">
 
-          <h4> <a href="">Home </a> 	</h4>
+          <h4> <a target="_blank" href="../page1/index.html">Home </a> 	</h4>
         </div>
         <div class="article-box">
           <h4>Organization details &darr;</h4>
@@ -232,11 +234,11 @@
           <ul  class='ul-2'>
             <li>
               <i class="bx bx-credit-card bx-xl"></i>
-              <span>Dashboard</span>
+              <span>Dashboar</span>
             </li>
             <li>
               <i class="bx bx-bar-chart-alt-2"></i>
-             <a target="_blank" href="../form page/index.html"><span>Form</span></a> 
+              <span>Forms</span>
             </li>
             <li>
               <i class="bx bx-bar-chart-alt-2"></i>
@@ -463,35 +465,189 @@
         </div>
       </article>
 
-      <div class="container">
-        <div class="container-box flex-space-between">
-          <div class="segment">
-            <h2>Sample page </h2>
-          </div>
-          <div class="segment flex-space-around" style="width: 17%">
-            <i class="bx bxs-home"></i>
-            <i class="bx bx-chevron-right"></i>
-            <h4>Sample page</h4>
-          </div>
+      <div class="container" id="main_cont">
+       
+          <!-- <div class="top_form"> -->
+           <!-- topp bar navigation -->
+         
+            <div class="container-box flex-space-between">
+              <div class="segment">
+                <h2>Sample page</h2>
+              </div>
+              <div class="segment flex-space-around" style="width: 17%">
+                <i class="bx bxs-home"></i>
+                <i class="bx bx-chevron-right"></i>
+                <h4>Sample page</h4>
+              </div>
+             </div> 
+             <div class="inner">
+          <!-- </div> -->
+          <div class="containerii">
+            <div class="box">
+              <div class="topi">
+                <div class="basic">Basic</div>
+                <div>
+                  <img class="imgLogo" src="muiImage.png" alt="mui_logo" />
+                </div>
+              </div>
+              <div class="linebar"></div>
+              <div class="topbar">
+                <div class="ship" id="firstship">1</div>
+                <div class="shipC" id="shipC1">Shipping address</div>
+                <div class="lin"></div>
+                <div class="ship">2</div>
+                <!-- <div class="telli">2</div> -->
+                <div class="shipC">Payment details</div>
+                <div class="lin"></div>
+                <div class="ship">3</div>
+                <div class="shipC">Review your order</div>
+              </div>
+              <header class="sign_up">
+                <h3 class="h3class">Shipping address</h3>
+              </header>
+<!-- form inputs feilds -->
+<form action="#" method="get" autocomplete="on">
+<!-- full name input -->
+        <div id="fullNam">
+            <div class="input-containerii">
+                <input type="text" id="firstName"
+                    name="firstName"
+                    required />
+                <label for="firstName">First Name*</label>
+            </div>
+            <div class="input-containerii">
+                <input type="text" id="lastName"
+                    name="lastName"
+                    required />
+                <label class="label" for="lastName">Last
+                    Name*</label>
+            </div>
         </div>
-        <div class="container-box container-box-2">
-          <h3>Sample card</h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolore
-            et hic amet, similique laudantium libero ab vel molestiae assumenda
-            perferendis aspernatur, unde, nulla totam id minus. Ipsam nulla
-            tempore pariatur temporibus! Earum iste asperiores nulla nostrum,
-            iusto magni, quam doloremque laborum totam iure veniam tempora
-            dolore neque fugit deleniti est ipsa amet exm placeat ut voluptatem
-            laborum eius quia! Error porro nobis minima eveniet esse debitis
-            ullam ut ipsam molestias!
-          </p>
+        <!-- address feils -->
+        <div class="input-containerii">
+            <input type="text" id="address1"
+                name="address1" required />
+            <label for="address1">Address1*</label>
+        </div>
+        <div class="input-containerii">
+            <input type="text" id="address2"
+                name="address2" required />
+            <label for="firstName">Address2*</label>
+        </div>
+          <!-- city and state -->
+          <div id="fullNam">
+            <div class="input-containerii">
+                <input type="text" id="City"
+                    name="City" required />
+                <label for="City">City*</label>
+            </div>
+            <div class="input-containerii">
+                <input
+                    type="text"
+                    id="State/province/region"
+                    name="State/province/region"
+                    required />
+                <label class="label"
+                    for="State/province/region">State/Province/Region*</label>
+            </div>
+        </div>
+        <!-- zip and country -->
+        <div id="fullNam">
+            <div class="input-containerii">
+                <input
+                    type="text"
+                    id="zip/ Poaral code"
+                    name="zip/ Poaral code"
+                    required />
+                    <label for="zip/ Poaral code">
+                        zip/Poaral code*
+                    </label>
+            </div>
+            <div class="input-containerii">
+                <input type="text" id="Country"
+                    name="Country" required />
+                <label class="label" for="Country">Country*</label>
+            </div>
+        </div>
+        
+         <!-- drop down list -->
+        <label for="cars" id="labledrop">Choose your
+            field of
+            interest:
+        </label>
+        <select name="cars" id="dropdown">
+            <option value="volvo">Designing</option>
+            <option value="saab">Developing</option>
+            <option value="mercedes">Purpose
+                Oriented</option>
+            <option value="audi">Others</option>
+        </select>
+        <!--radio buttons  -->
+        <h4 class="h4class">Select your's plane</h4>
+        <div class="radiobutton">
+            <div class="radio_input_lable"> <input
+                    type="radio"
+                    id="monthly" name="plans"
+                    value="Monthly">
+                <label for="monthly">Month`s</label>
+            </div>
+            <div class="radio_input_lable">
+                <input type="radio" id="yearly"
+                    name="plans"
+                    value="yearly">
+                <label for="yearly">Year`s</label>
+            </div>
+            <div class="radio_input_lable">
+                <input type="radio" id="other"
+                    name="plans"
+                    value="Other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        <div class="checkbox">
+            <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike" />
+            <label for="vehicle1" class="checkcont">
+                use this address for payment details</label>
+        </div>
+        
+        <!-- Buttons feilds -->
+              <div class="Button">
+                <input type="reset" /> 
+                <button value="Submit">Submit</button>
+              </div>
+            </div>
+          </div>
+          
+         
         </div>
       </div>
     </section>
-<script></script>
-<script src="script.js"></script>
+    <!-- <script>
+            const hover = document.querySelector('#hover');
+            const side_bar=document.querySelector('#side_bar');
+            const main_cont=document.querySelector('#main_cont');
+            console.log(hover);
+            let click=true;
+            if(click){
+                hover.addEventListener("click", (e)=>{
+                    console.log(side_bar.style.width);
+                    side_bar.style.width="0%";
+                    click=false;
+                })
+            }
+            else{
+                hover.addEventListener("click", (e)=>{
+                    console.log("dev bgf");
+                    side_bar.style.width="19vw";
+                    click=true;
+                }) 
+            }
+        </script> -->
+        <script src="script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
